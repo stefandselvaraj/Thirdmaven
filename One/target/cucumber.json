@@ -1,0 +1,170 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 10,
+        "name": "Verifying Adactin Login Details with Valid Credentials",
+        "description": "",
+        "id": "verify-adactin-login-details;verifying-adactin-login-details-with-valid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6672920600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the Adactin Page",
+            "match": {
+              "location": "LoginPageOne.userIsOnTheAdactinPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 180677100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User should enter \"Selvarajd12\", \"C6T72M\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Selvarajd12\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"C6T72M\"",
+                  "offset": 33
+                }
+              ],
+              "location": "LoginPageOne.userShouldEnter(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 90400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User should verify after login\"Hello Selvaraj\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Hello Selvaraj\"",
+                  "offset": 30
+                }
+              ],
+              "location": "LoginPageOne.userShouldVerifyAfterLogin(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Verify Adactin Login Details",
+    "description": "",
+    "id": "verify-adactin-login-details",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Feature/TC1_LoginPage.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 10,
+        "name": "Verify Adactin Search Hotelpage for valid data",
+        "description": "",
+        "id": "validate-the-search-hotel-page;verify-adactin-search-hotelpage-for-valid-data;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 431900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User select all the fields in search hotel page \"Paris\", \"Hotel Cornice\",  \"Super Deluxe\", \"5\", \"05/07/2023\", \"06/07/2023\", \"1\", \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Paris\"",
+                  "offset": 48
+                },
+                {
+                  "val": "\"Hotel Cornice\"",
+                  "offset": 57
+                },
+                {
+                  "val": "\"Super Deluxe\"",
+                  "offset": 75
+                },
+                {
+                  "val": "\"5\"",
+                  "offset": 91
+                },
+                {
+                  "val": "\"05/07/2023\"",
+                  "offset": 96
+                },
+                {
+                  "val": "\"06/07/2023\"",
+                  "offset": 110
+                },
+                {
+                  "val": "\"1\"",
+                  "offset": 124
+                },
+                {
+                  "val": "\"1\"",
+                  "offset": 129
+                }
+              ],
+              "location": "SearchHotel.userSelectAllTheFieldsInSearchHotelPage(String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat com.definition.SearchHotel.userShouldVerifyTheMessageAfterSearchHotel(SearchHotel.java:17)\r\n\tat ✽.User should verify the message after search hotel \"Search Hotel\"(src/test/resources/Feature/TC2_SearchHotel.feature:5)\r\n",
+              "duration": 2363800,
+              "status": "pending"
+            },
+            "line": 5,
+            "name": "User should verify the message after search hotel \"Search Hotel\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Search Hotel\"",
+                  "offset": 50
+                }
+              ],
+              "location": "SearchHotel.userShouldVerifyTheMessageAfterSearchHotel(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "User Clicks submit",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Validate the Search Hotel Page",
+    "description": "",
+    "id": "validate-the-search-hotel-page",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Feature/TC2_SearchHotel.feature",
+    "tags": []
+  }
+]

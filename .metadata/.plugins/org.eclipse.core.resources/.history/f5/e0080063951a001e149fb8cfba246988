@@ -1,0 +1,25 @@
+package com.definition;
+
+public class LoginPageOne {
+
+	@Given("User is on the Adactin Page")
+	public void userIsOnTheAdactinPage() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new cucumber.api.PendingException();
+	}
+
+	@When("User should enter {string}, {string}")
+	public void userShouldEnter(String string, String string2) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new cucumber.api.PendingException();
+	}
+
+	@Then("User should verify after login{string}")
+	public void userShouldVerifyAfterLogin(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new cucumber.api.PendingException();
+	}
+
+	
+	
+}

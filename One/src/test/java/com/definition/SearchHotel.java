@@ -1,0 +1,29 @@
+package com.definition;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+
+public class SearchHotel {
+	
+	
+	@Given("User select all the fields in search hotel page {string}, {string},  {string}, {string}, {string}, {string}, {string}, {string}")
+	public void userSelectAllTheFieldsInSearchHotelPage(String Location, String Hotels, String RoomType, String NumberofRooms, String CheckInDate, String CheckOutDate, String AdultsPerRoom, String childrenPerRoom) {
+		
+		
+		
+	 
+	}
+
+	@Then("User should verify the message after search hotel {string}")
+	public void userShouldVerifyTheMessageAfterSearchHotel(String string) {
+	    
+	}
+	
+	@Then("User Clicks submit")
+	public void userClicksSubmit() {
+	    
+	    
+	}
+
+
+}
